@@ -6,8 +6,7 @@
             <slot v-else name="title"></slot>
         </div>
         <div v-if="$store.state.inFrames" class="nya-stitle">
-            <span>本工具来自：</span>
-            <a :href="`${$store.state.env.url}`" target="_blank" rel="noopener noreferrer">{{ $store.state.env.url }}</a>
+          
         </div>
         <slot></slot>
     </div>
