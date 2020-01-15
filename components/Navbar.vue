@@ -2,7 +2,7 @@
     <div class="navbar">
         <header>
             <h1 class="title">
-            <a href="http://nameidi.top/MikuTools/">MikuTools - 工具合集</a>
+            <a href="http://nameidi.top/Mikutools/">MikuTools - 工具合集</a>
             </h1>
             <Panel />
         </header>
