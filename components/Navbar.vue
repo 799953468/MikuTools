@@ -2,9 +2,7 @@
     <div class="navbar">
         <header>
             <h1 class="title">
-                <nuxt-link to="https://nameidi.top/Mikutools/">
-                    MikuTools - 工具集合
-                </nuxt-link>
+            <a href="http://nameidi.top/MikuTools/">MikuTools - 工具合集</a>
             </h1>
             <Panel />
         </header>
