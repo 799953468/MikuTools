@@ -15,7 +15,7 @@
                 </nuxt-link>
             </template>
         </Search>
-        
+
         <Favorites v-show="!searchText" />
 
         <nya-container
@@ -71,38 +71,8 @@
                     </div>
                 </li>
                 <li><b>欢迎将本站收藏到收藏夹，以便以后使用</b></li>
-                <li>
-                    本站域名：<a
-                        :href="$store.state.env.url"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >{{ $store.state.env.domain }}</a>
-                </li>
                 <li v-if="$store.state.isMobile.any">
                     如果遇到无法使用或者样式问题，请更换浏览器后重试，推荐使用 Chrome 浏览器，对 iOS 设备兼容性可能不太好
-                </li>
-            </ul>
-        </nya-container>
-
-        <nya-container v-if="!$store.state.setting.hidePay" v-show="!searchText" title="打赏" icon="credit-card-outline">
-            <ul class="pay">
-                <li>
-                    <img src="../assets/qq.png" alt="qq">
-                    <div class="name">
-                        QQ
-                    </div>
-                </li>
-                <li>
-                    <img src="../assets/weixin.png" alt="weixin">
-                    <div class="name">
-                        微信
-                    </div>
-                </li>
-                <li>
-                    <img src="../assets/alipay.png" alt="alipay">
-                    <div class="name">
-                        支付宝
-                    </div>
                 </li>
             </ul>
         </nya-container>
@@ -113,13 +83,11 @@
 import Favorites from '~/components/Favorites';
 import Search from '~/components/Search';
 import isMobile from 'ismobilejs';
-import Welcome from '~/components/Welcome';
 export default {
     name: 'Home',
     components: {
         Favorites,
         Search,
-        Welcome
     },
     head() {
         return {
@@ -211,28 +179,6 @@ export default {
             box-shadow: none;
             margin: 5px;
             width: calc(50% - 10px);
-        }
-    }
-    .pay {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-around;
-        li {
-            margin: 0;
-            list-style: none;
-            padding: 10px;
-            .name {
-                text-align: center;
-                font-size: 25px;
-                font-weight: bold;
-                margin-top: 5px;
-            }
-            img {
-                width: 200px;
-                max-width: 100%;
-            }
         }
     }
     .badge {
