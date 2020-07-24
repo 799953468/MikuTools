@@ -1,10 +1,8 @@
 export const state = () => {
-    const tools = [
-        {
+    const tools = [{
             title: '其他工具',
             icon: 'layers-outline',
-            list: [
-                {
+            list: [{
                     name: '屏幕录制',
                     path: '/screen_record',
                     head: {
@@ -181,7 +179,14 @@ export const state = () => {
         {
             title: '图片相关',
             icon: 'image-outline',
-            list: [
+            list: [{
+                    name: '九宫格切图',
+                    path: '/img_jiugongge',
+                    head: {
+                        keywords: ['图片九宫格', '九宫格切图', '九宫格'],
+                        description: '图片分割成九宫格'
+                    }
+                },
                 {
                     name: 'Anime 4K',
                     path: '/anime4k',
@@ -296,8 +301,7 @@ export const state = () => {
         {
             title: '文字处理',
             icon: 'text-outline',
-            list: [
-                {
+            list: [{
                     name: '文本去重',
                     path: '/remove_duplicate',
                     head: {
@@ -363,8 +367,7 @@ export const state = () => {
         {
             title: '编程开发',
             icon: 'code-outline',
-            list: [
-                {
+            list: [{
                     name: 'CSS 兼容性处理',
                     path: '/autoprefixer',
                     head: {
