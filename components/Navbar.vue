@@ -2,7 +2,7 @@
     <div class="navbar">
         <header>
             <h1 class="title">
-            <a href="https://nameidi.netlify.app/">MikuTools - 工具合集</a>
+            <a href="https://mikutools.nameidi.top">MikuTools - 工具合集</a>
             </h1>
             <Panel />
         </header>
