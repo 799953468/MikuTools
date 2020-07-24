@@ -1,6 +1,6 @@
 <script>
 import Vue from 'vue/dist/vue.common';
-import DOMPurify from 'dompurify';
+import DOMPurify from 'isomorphic-dompurify';
 export default {
     props: {
         template: {
@@ -21,9 +21,7 @@ export default {
     },
     computed: {
         cleanTemplate() {
-            if (process.client) {
-                return DOMPurify.sanitize(this.template);
-            }
+            return DOMPurify.sanitize(this.template);
         }
     },
     watch: {
