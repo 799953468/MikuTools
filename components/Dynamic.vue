@@ -21,7 +21,9 @@ export default {
     },
     computed: {
         cleanTemplate() {
-            return DOMPurify.sanitize(this.template);
+            if (process.client) {
+                return DOMPurify.sanitize(this.template);
+            }
         }
     },
     watch: {
